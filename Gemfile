@@ -14,6 +14,12 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Use tz-info data to resolve Windows error for time zone data
+gem 'tzinfo-data', platforms: [:mingw, :mswin]
+
+# Use 12factor for log to stdout and Heroku asset delivery
+gem 'rails_12factor'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -27,7 +33,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Puma as the web server
-gem 'puma'
+gem 'puma', '2.12.2'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
